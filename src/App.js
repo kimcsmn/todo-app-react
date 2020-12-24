@@ -14,7 +14,7 @@ class App extends Component {
   )
 
   deleteTodo = (id) => {
-    // delete the todo that matched the passed in id from todo component
+   
     const todos = this.state.todos.filter(todo => {
       return todo.id !== id
     })
