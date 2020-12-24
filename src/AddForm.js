@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class AddForm extends Component {
-  // create local state to store data submitted at the form
+  
   state = (
     {
       title: ''
@@ -11,7 +11,6 @@ class AddForm extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
     this.props.addTodo(this.state)
-    // return back to empty string when a todo is submitted
     this.setState(
       {title: ''}
     )
